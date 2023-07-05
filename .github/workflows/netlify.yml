@@ -1,0 +1,21 @@
+name: "Netlify Production Pipeline"
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  static_test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: "show all files"
+        run: ls
+      
+      - name: "My Message"
+        run: echo "Please Process the payment for me"
+        
+      - name: "run test case"
+        run: exit 1
+      
